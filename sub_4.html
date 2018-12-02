@@ -3,8 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/common.css">
 </head>
 <body>
 <header class="header">
@@ -222,5 +222,39 @@
 	
 </aside>
 <!-- //quick banner -->
+<script src="./js/jquery-3.1.1.min.js"></script>
+<script src="./js/lightslider.min.js"></script>
+<script>
+
+	$(document).ready(function() {
+		$('.js-slider').lightSlider({
+			item:1,
+			slideMargin: 0,
+			speed:2000,
+			auto:true
+		});
+	});
+	$(document).ready(function() {
+		var slider = $('.js-portfolio').lightSlider({
+			item:3,
+			slideMove:1,
+			controls:false,
+			adaptiveHeight:330,
+			autoWidth:true,
+			pager:false,
+			slideMargin:30,
+			useCSS: true,
+			loop:false
+   		 });
+		
+		$('.btn-slide-prev').click(function(){
+			slider.goToPrevSlide(); 
+		});
+		$('.btn-slide-next').click(function(){
+			slider.goToNextSlide(); 
+		});
+	});
+
+</script>
 </body>
 </html>
