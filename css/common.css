@@ -9,6 +9,9 @@
 .common-layout{width:1000px;margin:0 auto;}
 .common-layout:after{content:'';display:block;clear: both;}
 
+.essential{color:#ff0000;}
+table th .essential{margin-left:3px;}
+
 /* 레이아웃 */
 .header{height:130px;}
 .header:after{content:'';display: block;clear:both;}
