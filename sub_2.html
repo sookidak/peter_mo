@@ -283,12 +283,13 @@
 	$(document).ready(function() {
 		$('.js-slider').lightSlider({
 			item:1,
+			slideMove:1,
 			slideMargin: 0,
 			speed:2000,
-			auto:true
+			auto:false,
+			loop:false,
+			controls:false
 		});
-	});
-	$(document).ready(function() {
 		var slider = $('.js-portfolio').lightSlider({
 			item:3,
 			slideMove:1,
@@ -307,6 +308,15 @@
 		$('.btn-slide-next').click(function(){
 			slider.goToNextSlide(); 
 		});
+		
+		;
+		$('.estimate-val').find('input:radio').click(function() { 
+			if($(this).is(":checked")){
+				$('.est-box').removeClass('active');
+				$(this).parent('.radio').parent('.est-box').addClass('active');
+			}
+		}) 
+
 	});
 
 </script>

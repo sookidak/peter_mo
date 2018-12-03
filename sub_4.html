@@ -120,10 +120,24 @@
 												<input type="text" id="fileName" class="file-input-textbox" placeholder="첨부는 총 3장까지 가능합니다." readonly >
 												<div class="file-input-div">
 													<div class="file-input-btn">첨부</div>
-													<input type="file" name="file_1" class="file-input-hidden" />
+													<input type="file" name="file_1" class="file-input-hidden" onchange="javascript: document.getElementById('fileName').value = this.value"/>/>
 												</div>
 											</div>
-
+											
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th>파일 첨부</th>
+									<td>
+										<div class="file-input-wrap">
+											<div>
+												<input type="text" id="fileName" class="file-input-textbox" placeholder="첨부는 총 3장까지 가능합니다." readonly >
+												<div class="file-input-div">
+													<div class="file-input-btn">첨부</div>
+													<input type="file" name="file_1" class="file-input-hidden" onchange="javascript: document.getElementById('fileName').value = this.value"/>/>
+												</div>
+											</div>
 											<div class="file-input-img">
 												<div class="input-img-box">
 													<img src="./img/img_view2.jpg" alt="">
@@ -229,12 +243,13 @@
 	$(document).ready(function() {
 		$('.js-slider').lightSlider({
 			item:1,
+			slideMove:1,
 			slideMargin: 0,
 			speed:2000,
-			auto:true
+			auto:false,
+			loop:false,
+			controls:false
 		});
-	});
-	$(document).ready(function() {
 		var slider = $('.js-portfolio').lightSlider({
 			item:3,
 			slideMove:1,
@@ -253,6 +268,15 @@
 		$('.btn-slide-next').click(function(){
 			slider.goToNextSlide(); 
 		});
+		
+		;
+		$('.estimate-val').find('input:radio').click(function() { 
+			if($(this).is(":checked")){
+				$('.est-box').removeClass('active');
+				$(this).parent('.radio').parent('.est-box').addClass('active');
+			}
+		}) 
+
 	});
 
 </script>

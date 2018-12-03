@@ -22,7 +22,11 @@
 </header>
 <!-- sub 공통 container -->
 <section class="container">
-	<!-- 메인 visual -->
+	<!-- 메인 visual --><ul class="category-title-list">
+						<!-- 해당 카테고리 선택시 active 클래스 추가 -->
+						<li><button type="button">업종별 간판</button></li>
+						<li><button type="button" class="active">종류별 간판</button></li>
+					</ul>
 	<div class="main-top">
 		<div class="main-top-bg"></div>
 		<div class="common-layout">
@@ -97,8 +101,8 @@
 				<div class="category-title">
 					<ul class="category-title-list">
 						<!-- 해당 카테고리 선택시 active 클래스 추가 -->
-						<li><a href="#">업종별 간판</a></li>
-						<li><a href="#" class="active">종류별 간판</a></li>
+						<li><button type="button">업종별 간판</button></li>
+						<li><button type="button" class="active">종류별 간판</button></li>
 					</ul>
 				</div>
 				<div class="category-val-wrap">
@@ -345,12 +349,13 @@
 	$(document).ready(function() {
 		$('.js-slider').lightSlider({
 			item:1,
+			slideMove:1,
 			slideMargin: 0,
 			speed:2000,
-			auto:true
+			auto:false,
+			loop:false,
+			controls:false
 		});
-	});
-	$(document).ready(function() {
 		var slider = $('.js-portfolio').lightSlider({
 			item:3,
 			slideMove:1,
@@ -369,6 +374,15 @@
 		$('.btn-slide-next').click(function(){
 			slider.goToNextSlide(); 
 		});
+		
+		;
+		$('.estimate-val').find('input:radio').click(function() { 
+			if($(this).is(":checked")){
+				$('.est-box').removeClass('active');
+				$(this).parent('.radio').parent('.est-box').addClass('active');
+			}
+		}) 
+
 	});
 
 </script>

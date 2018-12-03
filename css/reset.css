@@ -82,6 +82,7 @@ a{
 	text-decoration: none;
 	vertical-align: middle;
 	display:inline-block;
+	cursor:pointer;
 }
 table {
 	border-collapse:collapse;

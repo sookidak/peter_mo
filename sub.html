@@ -58,7 +58,7 @@
 				<li>
 					<span class="list-num">03.</span>
 					<span class="list-text1">VISIT ESTIMATE</span>
-					<span class="list-text2">현장에 직접방문하여x<br>무료 견적 산출
+					<span class="list-text2">현장에 직접방문하여<br>무료 견적 산출
 						</span>
 				</li>
 				<li>
@@ -82,7 +82,7 @@
 				<li>
 					<div class="list-title">피터팬은 좋아합니다.</div>
 					<div class="list-text">간판경력 26년 전문가를 필두로 간판을 좋아하는 사람들이 모였습니다. 자유로운 분위기 속에서도<br>
-							원칙과 책임감이 있는 분들 즐겁게 일하며 함께 할 때 케미가 폭발하는 매력자들과 함께 합니다.</div>
+					원칙과 책임감이 있는 분들 즐겁게 일하며 함께 할 때 케미가 폭발하는 매력자들과 함께 합니다.</div>
 				</li>
 			</ul>
 		</div>
@@ -210,12 +210,13 @@
 	$(document).ready(function() {
 		$('.js-slider').lightSlider({
 			item:1,
+			slideMove:1,
 			slideMargin: 0,
 			speed:2000,
-			auto:true
+			auto:false,
+			loop:false,
+			controls:false
 		});
-	});
-	$(document).ready(function() {
 		var slider = $('.js-portfolio').lightSlider({
 			item:3,
 			slideMove:1,
@@ -234,6 +235,15 @@
 		$('.btn-slide-next').click(function(){
 			slider.goToNextSlide(); 
 		});
+		
+		;
+		$('.estimate-val').find('input:radio').click(function() { 
+			if($(this).is(":checked")){
+				$('.est-box').removeClass('active');
+				$(this).parent('.radio').parent('.est-box').addClass('active');
+			}
+		}) 
+
 	});
 
 </script>
