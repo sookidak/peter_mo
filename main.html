@@ -22,30 +22,51 @@
 </header>
 <!-- sub 공통 container -->
 <section class="container">
-	<!-- 메인 visual --><ul class="category-title-list">
-						<!-- 해당 카테고리 선택시 active 클래스 추가 -->
-						<li><button type="button">업종별 간판</button></li>
-						<li><button type="button" class="active">종류별 간판</button></li>
-					</ul>
+	<!-- 메인 visual -->
+	<!-- <ul class="category-title-list">
+		<li><button type="button">업종별 간판</button></li>
+		<li><button type="button" class="active">종류별 간판</button></li>
+	</ul> -->
 	<div class="main-top">
-		<div class="main-top-bg"></div>
-		<div class="common-layout">
-			<ul class="main-slider js-slider">
-				<li>
-					<div class="main-visual-text1">사장님의 사업번창을 위해</div>
-					<div class="main-visual-text2">세심한 간판 컨설팅에서<Br>책임시공 - AS 까지</div>
-					<div class="main-visual-button">
-						<button type="button" class="btn-mainvisual">무료방문 · 견적문의</button>
+		
+		<div class="common-layout js-slider">
+			<ul class="main-slider swiper-wrapper">
+				<li class="swiper-slide">
+					<div class="main-slide-bg1"></div>
+					<div class="main-top-bg"></div>
+					<div class="main-visual-cneter">
+						<div class="main-visual-text1">사장님의 사업번창을 위해</div>
+						<div class="main-visual-text2">세심한 간판 컨설팅에서<Br>책임시공 - AS 까지</div>
+						<div class="main-visual-button">
+							<button type="button" class="btn-mainvisual">무료방문 · 견적문의<span  class="icon-arr"><img src="./img/icon-arrow@2x.png" alt=""></span></button>
+						</div>
 					</div>
 				</li>
-				<li>
-					<div class="main-visual-text1">22222</div>
-					<div class="main-visual-text2">세심한 간판 컨설팅에서<Br>책임시공 - AS 까지</div>
-					<div class="main-visual-button">
-						<button type="button" class="btn-mainvisual">무료방문 · 견적문의</button>
+				<li class="swiper-slide">
+					<div class="main-slide-bg2"></div>
+					<div class="main-top-bg"></div>
+					<div class="main-visual-cneter">
+						<div class="main-visual-text1">점포에 최적화된 디자인과 시공</div>
+						<div class="main-visual-text2">고객의 눈길이 한번이라도<Br>더 머물게 하는 간판</div>
+						<div class="main-visual-button">
+							<button type="button" class="btn-mainvisual">무료방문 · 견적문의<span  class="icon-arr"><img src="./img/icon-arrow@2x.png" alt=""></span></button>
+						</div>
+					</div>
+				</li>
+				<li class="swiper-slide">
+					<div class="main-slide-bg3"></div>
+					<div class="main-top-bg"></div>
+					<div class="main-visual-cneter">
+						<div class="main-visual-text1">26년차 간판 전문가와 함께</div>
+						<div class="main-visual-text2">숙련된 기술과 노하우
+								<Br>합리적인 선택</div>
+						<div class="main-visual-button">
+							<button type="button" class="btn-mainvisual">무료방문 · 견적문의<span  class="icon-arr"><img src="./img/icon-arrow@2x.png" alt=""></span></button>
+						</div>
 					</div>
 				</li>
 			</ul>
+			<div class="slider-pagination"></div>
 		</div>
 	</div>
 	<!-- //메인 visual -->
@@ -123,9 +144,9 @@
 					<div class="slide-prev">
 						<button type="button" class="btn-slide-prev"></button>
 					</div>
-					<div class="slider-list-box">
-						<ul class="slider-list js-portfolio cs-hidden">
-							<li>
+					<div class="slider-list-box js-portfolio">
+						<ul class="slider-list swiper-wrapper">
+							<li class="swiper-slide">
 								<div class="ib-box">
 									<div class="ib-img"><a href="#link"><img src="./img/img_thumb.jpg" alt=""></a></div>
 									<div class="ib-title">
@@ -138,10 +159,10 @@
 											<li><a href="#link">#채널간판</a></li>
 										</ul>
 									</div>
-									<div class="ib-text">갈바 프레임 간판 고무스카시, 조명(매립), 아크릴</div>
+									<div class="ib-text">갈바 프레임 간판 고무스카시, 조명(매립)</div>
 								</div>
 							</li>
-							<li>
+							<li class="swiper-slide">
 								<div class="ib-box">
 									<div class="ib-img"><a href="#link"><img src="./img/img_thumb.jpg" alt=""></a></div>
 									<div class="ib-title">
@@ -154,10 +175,10 @@
 											<li><a href="#link">#채널간판</a></li>
 										</ul>
 									</div>
-									<div class="ib-text">갈바 프레임 간판 고무스카시, 조명(매립), 아크릴</div>
+									<div class="ib-text">갈바 프레임 간판 고무스카시, 조명(매립)</div>
 								</div>
 							</li>
-							<li>
+							<li class="swiper-slide">
 								<div class="ib-box">
 									<div class="ib-img"><a href="#link"><img src="./img/img_thumb.jpg" alt=""></a></div>
 									<div class="ib-title">
@@ -170,10 +191,10 @@
 											<li><a href="#link">#채널간판</a></li>
 										</ul>
 									</div>
-									<div class="ib-text">갈바 프레임 간판 고무스카시, 조명(매립), 아크릴</div>
+									<div class="ib-text">갈바 프레임 간판 고무스카시, 조명(매립)</div>
 								</div>
 							</li>
-							<li>
+							<li class="swiper-slide">
 								<div class="ib-box">
 									<div class="ib-img"><a href="#link"><img src="./img/img_thumb.jpg" alt=""></a></div>
 									<div class="ib-title">
@@ -186,10 +207,10 @@
 											<li><a href="#link">#채널간판</a></li>
 										</ul>
 									</div>
-									<div class="ib-text">갈바 프레임 간판 고무스카시, 조명(매립), 아크릴</div>
+									<div class="ib-text">갈바 프레임 간판 고무스카시, 조명(매립)</div>
 								</div>
 							</li>
-							<li>
+							<li class="swiper-slide">
 								<div class="ib-box">
 									<div class="ib-img"><a href="#link"><img src="./img/img_thumb.jpg" alt=""></a></div>
 									<div class="ib-title">
@@ -202,10 +223,10 @@
 											<li><a href="#link">#채널간판</a></li>
 										</ul>
 									</div>
-									<div class="ib-text">갈바 프레임 간판 고무스카시, 조명(매립), 아크릴</div>
+									<div class="ib-text">갈바 프레임 간판 고무스카시, 조명(매립)</div>
 								</div>
 							</li>
-							<li>
+							<li class="swiper-slide">
 								<div class="ib-box">
 									<div class="ib-img"><a href="#link"><img src="./img/img_thumb.jpg" alt=""></a></div>
 									<div class="ib-title">
@@ -218,10 +239,10 @@
 											<li><a href="#link">#채널간판</a></li>
 										</ul>
 									</div>
-									<div class="ib-text">갈바 프레임 간판 고무스카시, 조명(매립), 아크릴</div>
+									<div class="ib-text">갈바 프레임 간판 고무스카시, 조명(매립)</div>
 								</div>
 							</li>
-							<li>
+							<li class="swiper-slide">
 								<div class="ib-box">
 									<div class="ib-img"><a href="#link"><img src="./img/img_thumb.jpg" alt=""></a></div>
 									<div class="ib-title">
@@ -234,10 +255,10 @@
 											<li><a href="#link">#채널간판</a></li>
 										</ul>
 									</div>
-									<div class="ib-text">갈바 프레임 간판 고무스카시, 조명(매립), 아크릴</div>
+									<div class="ib-text">갈바 프레임 간판 고무스카시, 조명(매립)</div>
 								</div>
 							</li>
-							<li>
+							<li class="swiper-slide">
 								<div class="ib-box">
 									<div class="ib-img"><a href="#link"><img src="./img/img_thumb.jpg" alt=""></a></div>
 									<div class="ib-title">
@@ -250,7 +271,7 @@
 											<li><a href="#link">#채널간판</a></li>
 										</ul>
 									</div>
-									<div class="ib-text">갈바 프레임 간판 고무스카시, 조명(매립), 아크릴</div>
+									<div class="ib-text">갈바 프레임 간판 고무스카시, 조명(매립)</div>
 								</div>
 							</li>
 						</ul>
@@ -343,48 +364,31 @@
 </aside>
 <!-- //quick banner -->
 <script src="./js/jquery-3.1.1.min.js"></script>
-<script src="./js/lightslider.min.js"></script>
+<script src="./js/swiper.js"></script>
 <script>
-
-	$(document).ready(function() {
-		$('.js-slider').lightSlider({
-			item:1,
-			slideMove:1,
-			slideMargin: 0,
-			speed:2000,
-			auto:false,
-			loop:false,
-			controls:false
-		});
-		var slider = $('.js-portfolio').lightSlider({
-			item:3,
-			slideMove:1,
-			controls:false,
-			adaptiveHeight:330,
-			autoWidth:true,
-			pager:false,
-			slideMargin:30,
-			useCSS: true,
-			loop:false
-   		 });
-		
-		$('.btn-slide-prev').click(function(){
-			slider.goToPrevSlide(); 
-		});
-		$('.btn-slide-next').click(function(){
-			slider.goToNextSlide(); 
-		});
-		
-		;
-		$('.estimate-val').find('input:radio').click(function() { 
-			if($(this).is(":checked")){
-				$('.est-box').removeClass('active');
-				$(this).parent('.radio').parent('.est-box').addClass('active');
-			}
-		}) 
-
-	});
-
+  var swiper = new Swiper('.js-slider', {
+	spaceBetween: 0,
+	effect: 'fade',
+	pagination: {
+	  el: '.slider-pagination',
+	  clickable: true,
+	},
+	autoplay: {
+		delay: 2000,
+	},
+  });
+  var swiper = new Swiper('.js-portfolio', {
+	slidesPerView: 3,
+	spaceBetween: 30,
+	navigation: {
+	  nextEl: '.btn-slide-next',
+	  prevEl: '.btn-slide-prev',
+	},
+	autoplay: {
+		delay: 4000,
+	},
+});
 </script>
+
 </body>
 </html>

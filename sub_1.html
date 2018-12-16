@@ -277,48 +277,31 @@
 </aside>
 <!-- //quick banner -->
 <script src="./js/jquery-3.1.1.min.js"></script>
-<script src="./js/lightslider.min.js"></script>
+<script src="./js/swiper.js"></script>
 <script>
-
-	$(document).ready(function() {
-		$('.js-slider').lightSlider({
-			item:1,
-			slideMove:1,
-			slideMargin: 0,
-			speed:2000,
-			auto:false,
-			loop:false,
-			controls:false
-		});
-		var slider = $('.js-portfolio').lightSlider({
-			item:3,
-			slideMove:1,
-			controls:false,
-			adaptiveHeight:330,
-			autoWidth:true,
-			pager:false,
-			slideMargin:30,
-			useCSS: true,
-			loop:false
-   		 });
-		
-		$('.btn-slide-prev').click(function(){
-			slider.goToPrevSlide(); 
-		});
-		$('.btn-slide-next').click(function(){
-			slider.goToNextSlide(); 
-		});
-		
-		;
-		$('.estimate-val').find('input:radio').click(function() { 
-			if($(this).is(":checked")){
-				$('.est-box').removeClass('active');
-				$(this).parent('.radio').parent('.est-box').addClass('active');
-			}
-		}) 
-
-	});
-
+  var swiper = new Swiper('.js-slider', {
+	spaceBetween: 0,
+	effect: 'fade',
+	pagination: {
+	  el: '.slider-pagination',
+	  clickable: true,
+	},
+	autoplay: {
+		delay: 2000,
+	},
+  });
+  var swiper = new Swiper('.js-portfolio', {
+	slidesPerView: 3,
+	spaceBetween: 30,
+	navigation: {
+	  nextEl: '.btn-slide-next',
+	  prevEl: '.btn-slide-prev',
+	},
+	autoplay: {
+		delay: 4000,
+	},
+});
 </script>
+
 </body>
 </html>
